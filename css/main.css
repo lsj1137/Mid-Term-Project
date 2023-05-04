@@ -1,8 +1,17 @@
+html {
+  height: 100%;
+}
+
 body {
   margin: 0;
   padding: 0;
-  width: 70%;
+  width: 72%;
+  height: 100%;
   margin: 0 auto;
+}
+
+.english {
+  font-family: 'Manrope', sans-serif;
 }
 
 .header {
@@ -13,7 +22,6 @@ body {
 }
 
 .logo {
-  flex: 1;
   align-items: center;
 }
 
@@ -23,7 +31,7 @@ body {
 }
 
 .menu-bar {
-  flex: 10;
+  flex: 1;
   height: 40px;
   display: flex;
   justify-content: space-evenly;
@@ -36,8 +44,8 @@ body {
 }
 
 .menu-bar ul li {
-  margin: 0 15px;
-  border-left: 1px solid #ccc;
+  flex: 1;
+  border-left: 2px solid #777;
   padding: 0 15px;
   position: relative;
 }
@@ -47,26 +55,38 @@ body {
 }
 
 .menu-bar ul li a {
+  padding: 15px;
   color: #000;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 18px;
 }
 
-.menu-bar ul li::after {
-  content: "";
-  top: 50%;
-  right: -7.5px;
-  width: 15px;
-  height: 15px;
-  transform: translateY(-50%);
-  background-color: #333;
-  border-radius: 50%;
+.banner {
+  height: 65%;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-.menu-bar ul li:last-child::after {
+.slider {
+  background-color: #ccc;
+  overflow: hidden;
+  height: 90%;
+  text-align: center;
+}
+
+.slider img {
+  height: 100%;
   display: none;
 }
 
-.banner img {
-  width:100%
+.slider img:first-child {
+  display: inline-block;
+}
+
+.layer {
+  display: flex;
+}
+
+.block {
+  flex: 1;
 }
