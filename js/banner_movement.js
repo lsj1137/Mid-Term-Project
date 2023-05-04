@@ -1,8 +1,9 @@
 let currentSlide = 0;
-var keepSlide = 1;
+let keepPlay = 1;
 const slides = document.querySelectorAll('.slider img');
-const slideCount = slides.length;
+const play_btn = document.getElementById('play_btn');
 
+const slideCount = slides.length;
 function showSlide(mode) {
   slides[currentSlide].style.display = 'none';
   if (mode == -1)
@@ -24,11 +25,26 @@ if (slideCount>0)
 document.querySelector('.btn.prev').addEventListener('click', () => {
   clearInterval(interval);
   showSlide(-1);
-  interval = setInterval(nextSlide, 3000);
+  if (keepPlay == 1)
+    interval = setInterval(nextSlide, 3000);
 });
 
 document.querySelector('.btn.next').addEventListener('click', () => {
   clearInterval(interval);
   showSlide(1);
-  interval = setInterval(nextSlide, 3000);
+  if (keepPlay == 1)
+    interval = setInterval(nextSlide, 3000);
 });
+
+document.querySelector('.btn.play').addEventListener('click', ()=>{
+  if (keepPlay == 1) {
+    clearInterval(interval);
+    play_btn.src = '../img_srcs/play-button-arrowhead.png';
+    keepPlay = 0;
+  }
+  else{
+    interval = setInterval(nextSlide, 3000);
+    play_btn.src = '../img_srcs/pause.png';
+    keepPlay = 1;
+  }
+})

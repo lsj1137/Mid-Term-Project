@@ -14,28 +14,28 @@
 <body>
 	<header class="header">
 		<div class="logo">
-			<a href="MyHome.html"><img src="../logo.png" alt="My Logo"></a>
+			<a href="MyHome.html"><img src="../img_srcs/logo.png" alt="My Logo"></a>
 		</div>
 		<nav class="menu-bar">
 			<ul>
-				<li><a href="about.html" class="english">About</a></li>
-				<li><a href="hobbies.html" class="english">Hobbies</a></li>
-				<li><a href="skills.html" class="english">Skills</a></li>
-				<li><a href="portfolio.html" class="english">Portfolio</a></li>
-				<li><a href="contact.html" class="english">Contact</a></li>
+				<li><a href="about.html" class="english">ABOUT</a></li>
+				<li><a href="hobbies.html" class="english">HOBBIES</a></li>
+				<li><a href="skills.html" class="english">SKILLS</a></li>
+				<li><a href="portfolio.html" class="english">PORTFOLIO</a></li>
+				<li><a href="contact.html" class="english">CONTACT</a></li>
 			</ul>
 		</nav>
 	</header>
 	
 	<div class="banner">
 		<div class="slider">
-			<img src="../banner1_campus.jpg" alt="Banner Image">
-			<img src="../banner2_music.jpg" alt="Banner Image">
-			<img src="../banner3_keyboard.jpg" alt="Banner Image">
+			<img src="../img_srcs/banner1_campus.jpg" alt="Banner Image">
+			<img src="../img_srcs/banner2_music.jpg" alt="Banner Image">
+			<img src="../img_srcs/banner3_keyboard.jpg" alt="Banner Image">
 		</div>
-		<button class="btn prev"><</button>
-		<button class="btn play">||</button>
-		<button class="btn next">></button>
+		<button class="btn prev"><img src="../img_srcs/left-arrow.png"></button>
+		<button class="btn play"><img src="../img_srcs/pause.png" id="play_btn"></button>
+		<button class="btn next"><img src="../img_srcs/right-arrow.png"></button>
 		<script src="../js/banner_movement.js"></script>
 	</div>
 	<main>
@@ -45,22 +45,26 @@
 				<p>자기소개 내용...</p>
 			</section>
 			
+			<section class="block hobbies english">
+				<h2>Hobbies</h2>
+				<p>취미를 소개하는 내용...</p>
+			</section>
+		</div>
+		<div class="layer">
 			<section class="block skills english">
 				<h2>Skills</h2>
 				<p>보유 기술과 역량을 간략히 소개하는 내용...</p>
 			</section>
-		</div>
-		<div class="layer">
+			
 			<section class="block portfolio english">
 				<h2>Portfolio</h2>
 				<p>지금까지 작업한 작업물을 소개하는 내용...</p>
 			</section>
-			
-			<section class="block contact english">
-				<h2>Contact Me</h2>
-				<p>연락처 정보와 메일 양식...</p>
-			</section>
 		</div>
+		<section class="block contact english">
+			<h2>Contact Me</h2>
+			<p>연락처 정보와 메일 양식...</p>
+		</section>
 	</main>
 	<footer>
 		<!-- 하단바, 저작권 정보 등 -->
