@@ -63,7 +63,6 @@ body {
 .banner {
   height: 65%;
   text-align: center;
-  margin-bottom: 20px;
 }
 
 .banner .btn {
@@ -101,5 +100,45 @@ body {
 }
 
 .block {
+  border-bottom: 2px solid #000;
   flex: 1;
+}
+
+.block div {
+  display: flex;
+}
+
+.block h2 {
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.block a {
+  padding-right: 30px;
+  font-size: 5px;
+  color: #000;
+  text-decoration: none;
+  align-self: center;
+  text-align: end;
+  flex: 1;
+}
+
+.block p {
+  margin-bottom: 30px;
+}
+
+#contact ul {
+  padding-left: 20px;
+}
+
+#contact li{
+  margin: 20px 0;
+}
+
+#contact a img {
+  height: 20px;
+}
+
+footer {
+  height: 20%;
 }

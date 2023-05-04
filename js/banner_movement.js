@@ -2,8 +2,8 @@ let currentSlide = 0;
 let keepPlay = 1;
 const slides = document.querySelectorAll('.slider img');
 const play_btn = document.getElementById('play_btn');
-
 const slideCount = slides.length;
+
 function showSlide(mode) {
   slides[currentSlide].style.display = 'none';
   if (mode == -1)
@@ -20,20 +20,20 @@ function nextSlide() {
 }
 
 if (slideCount>0)
-  var interval = setInterval(nextSlide, 3000);
+  var interval = setInterval(nextSlide, 4000);
 
 document.querySelector('.btn.prev').addEventListener('click', () => {
   clearInterval(interval);
   showSlide(-1);
   if (keepPlay == 1)
-    interval = setInterval(nextSlide, 3000);
+    interval = setInterval(nextSlide, 4000);
 });
 
 document.querySelector('.btn.next').addEventListener('click', () => {
   clearInterval(interval);
   showSlide(1);
   if (keepPlay == 1)
-    interval = setInterval(nextSlide, 3000);
+    interval = setInterval(nextSlide, 4000);
 });
 
 document.querySelector('.btn.play').addEventListener('click', ()=>{
@@ -43,7 +43,7 @@ document.querySelector('.btn.play').addEventListener('click', ()=>{
     keepPlay = 0;
   }
   else{
-    interval = setInterval(nextSlide, 3000);
+    interval = setInterval(nextSlide, 4000);
     play_btn.src = '../img_srcs/pause.png';
     keepPlay = 1;
   }
