@@ -6,10 +6,20 @@ main div {
     font-size: 18px;
 }
 
+h2 a {
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+}
+
 .concert_img img{
     width: 33%;
 }
 
 .keyboard_img img{
     width: 25%;
+}
+
+.diary_img img{
+    width: 35%;
 }
